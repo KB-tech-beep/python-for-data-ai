@@ -220,15 +220,21 @@ print("   Delete element from list index 2 =>", general_courses_list)           
 
 
 # ============================================================================
-# 10. Ordering & Rearranging (Mainly Lists)
+# 5. Ordering & Rearranging (Mainly Lists)
 # ============================================================================
 print("\n" + "="*80)
 print("4. Ordering and Rearranging of list.")
 print("="*80)
-print("a. ")
-# 5. Ordering & Rearranging (Mainly Lists)
-#    a. Sorting (.sort(), sorted())
-#    b. Reversing (.reverse())
+print("a. Ordering of list")
+general_courses_list.sort()
+print("   Sort the course list =>", general_courses_list)                                               # Output: ['Arts', 'Biology', 'Hindi', 'Math', 'Mechanical System', 'Physics', 'Social Science', 'Spanish']
+general_courses_list.sort(reverse=True)
+print("   Sort the course list in reserve =>", general_courses_list)                                    # Output: ['Spanish', 'Social Science', 'Physics', 'Mechanical System', 'Math', 'Hindi', 'Biology', 'Arts']
+print("   Create a new sorted list from original list =>", sorted(general_courses_list, reverse=True))  # Output: ['Spanish', 'Social Science', 'Physics', 'Mechanical System', 'Math', 'Hindi', 'Biology', 'Arts']
+print("\nb. Reversing of list")
+general_courses_list.reverse()
+print("   Reserve the course list =>", general_courses_list)                                            # Output: ['Arts', 'Biology', 'Hindi', 'Math', 'Mechanical System', 'Physics', 'Social Science', 'Spanish'] 
+
 
 
 # ============================================================================
@@ -239,6 +245,6 @@ print("4. Clearing Elements from Lists and Sets")
 print("="*80)
 print("a. Clear all element from Lists and Sets")
 general_courses_list.clear()
-print("   Clear all elements from list:", general_courses_list)
+print("   Clear all elements from list:", general_courses_list)                                          # Output: []
 general_courses_set.clear()
-print("   Clear all elements from set:", general_courses_set)
+print("   Clear all elements from set:", general_courses_set)                                            # Output: {}
